@@ -1,0 +1,17 @@
+set group_subprocesses Auto
+set ignore_six_quark_processes False
+set loop_optimized_output True
+set complex_mass_scheme False
+import model sm-no_b_mass
+define p = g u c d s u~ c~ d~ s~ b b~
+define j = u c d s u~ c~ d~ s~
+define l+ = e+ mu+ ta+
+define l- = e- mu- ta-
+define vl = ve vm vt
+define vl~ = ve~ vm~ vt~
+generate p p > w+ b j $$ w+ w- / a z QCD<=0, w+ > l+ vl @0
+add process p p > w+ b~ j $$ w+ w- / a z QCD<=0, w+ > l+ vl @1
+add process p p > w- b j $$ w+ w- / a z QCD<=0, w- > l- vl~ @2
+add process p p > w- b~ j $$ w+ w- / a z QCD<=0, w- > l- vl~ @3
+
+output ST_5f_w_lo_mini -nojpeg
