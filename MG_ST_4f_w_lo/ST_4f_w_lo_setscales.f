@@ -89,7 +89,7 @@ c        transverse mass of spectator b quark
 c        m^2+pt^2=p(0)^2-p(3)^2=(p(0)+p(3))*(p(0)-p(3))
          i=nexternal-1
          rscale=(P(0,i)+P(3,i))*(P(0,i)-P(3,i))
-		 rscale=4d0*dsqrt(max(0d0,rscale))         
+         rscale=4d0*dsqrt(max(0d0,rscale))         
 c		 write(*,*) "User-defined scale not set"
 c         stop 21
 c         rscale = 0
