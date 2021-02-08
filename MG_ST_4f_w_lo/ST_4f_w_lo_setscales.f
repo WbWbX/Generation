@@ -85,7 +85,7 @@ cc      to use this code you must set                                           
 cc                 dynamical_scale_choice = 0                                    cc
 cc      in the run_card (run_card.dat)                                           cc
 ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-c        transverse mass of spectator b quark (keep it last in the proc card)
+c        transverse mass of spectator b quark
 c        m^2+pt^2=p(0)^2-p(3)^2=(p(0)+p(3))*(p(0)-p(3))
          i=nexternal-1
          rscale=(P(0,i)+P(3,i))*(P(0,i)-P(3,i))
